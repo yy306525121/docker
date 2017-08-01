@@ -15,4 +15,5 @@ ENV TOMCAT_BASE /usr/local/tomcat
 COPY ./dubbo-admin.war $TOMCAT_BASE/webapps/
 
 #删除默认的ROOT文件夹
-RUN rm -rf $TOMCAT_BASE/webapps/ROOT
+RUN rm -rf $TOMCAT_BASE/webapps/ROOT \
+	&& rm -rf /var/lib/apt/lists/*
