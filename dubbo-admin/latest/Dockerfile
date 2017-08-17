@@ -12,8 +12,7 @@ MAINTAINER james <306525121@qq.com>
 ENV TOMCAT_BASE /usr/local/tomcat
 
 #删除默认的ROOT文件夹
-RUN rm -rf $TOMCAT_BASE/webapps/ROOT \
-	&& rm -rf /var/lib/apt/lists/*
+RUN rm -rf $TOMCAT_BASE/webapps/ROOT
 
 #复制war包
 COPY ./ROOT.war $TOMCAT_BASE/webapps/
