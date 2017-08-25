@@ -1,0 +1,16 @@
+version: '2'
+services:
+  zookeeper:
+    image: zookeeper
+    networks:
+      - dubbo-admin
+  dubbo-admin:
+    image: yy306525121/dubbo-admin
+    networks: 
+      - dubbo-admin
+    depends_on:
+      - zookeeper
+    ports:
+      - "8888:8080"
+networks:
+  dubbo-admin:
