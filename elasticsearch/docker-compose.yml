@@ -1,0 +1,20 @@
+version: "3.2"
+services:
+  elasticsearch-service:
+    image: elasticsearch:6.4.1
+    volumes:
+    - elasticsearch-volume:/var/lib/elasticsearch
+    environment:
+      discovery.type: 'single-node'
+    networks:
+    - elasticsearch-network
+    ports:
+    - "9200:9200"
+    - "9300:9300"
+    expose:
+      - 9200
+      - 9300
+volumes:
+  elasticsearch-volume:
+networks:
+  elasticsearch-network:

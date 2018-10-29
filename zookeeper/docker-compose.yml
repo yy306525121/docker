@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  zookeeper-service:
+    image: zookeeper
+    networks:
+    - zookeeper-network
+    ports:
+    - "2181:2181"
+networks:
+  zookeeper-network:

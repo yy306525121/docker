@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+  mysql-service:
+    image: mysql:5.7.23
+    volumes:
+      - mysql-data-5.7:/var/lib/mysql
+      - ./conf:/etc/mysql/conf.d
+    environment:
+      TZ: 'Asia/Shanghai'
+      MYSQL_ROOT_PASSWORD: hello
+    networks:
+      - db
+    ports:
+      - "3306:3306"
+volumes:
+    mysql-data-5.7:
+networks:
+  db:

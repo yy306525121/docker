@@ -1,0 +1,14 @@
+version: "3.2"
+services:
+  redis-service:
+    image: redis
+    volumes:
+    - redis-data:/data
+    networks:
+    - redis-network
+    ports:
+    - "6379:6379"
+volumes:
+  redis-data:
+networks:
+  redis-network:

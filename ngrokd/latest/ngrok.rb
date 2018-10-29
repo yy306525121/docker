@@ -7,7 +7,7 @@ cask :v1 => 'ngrok' do
   name 'Ngrok'
   homepage 'https://ngrok.com/'
 
-  binary 'ngrok_darwin', :target => '/usr/local/bin/ngrok'
+  binary 'ngrok', :target => '/usr/local/bin/ngrok'
 
   postflight do
     system "chmod", "755", "#{staged_path}/ngrok_darwin"
