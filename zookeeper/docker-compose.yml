@@ -1,7 +1,8 @@
 version: "3.2"
 services:
-  zookeeper-service:
+  zookeeper:
     image: zookeeper
+    domainname: zookeeper
     networks:
     - zookeeper-network
     ports:

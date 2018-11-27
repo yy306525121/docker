@@ -1,4 +1,5 @@
 FROM java
-RUN wget -qO- git.io/fxsWx | bash &&
+RUN wget -qO- git.io/fxsWx | bash \
+    && cd ./tale
 EXPOSE 9000
-ENTRYPOINT ["sh", "tale/tool", "start"]
+ENTRYPOINT ["sh", "tool", "start"]

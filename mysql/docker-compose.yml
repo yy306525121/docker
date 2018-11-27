@@ -4,10 +4,10 @@ services:
     image: mysql:5.7.23
     volumes:
       - mysql-data-5.7:/var/lib/mysql
-      - ./conf:/etc/mysql/conf.d
     environment:
       TZ: 'Asia/Shanghai'
       MYSQL_ROOT_PASSWORD: hello
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     networks:
       - db
     ports:
