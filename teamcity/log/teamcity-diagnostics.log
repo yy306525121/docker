@@ -1,0 +1,1 @@
+[2019-03-21 03:41:07,111]   INFO - iagnostic.web.DiagnosticFilter - Request processing took too long: 56s,531ms, request: GET '/profile.html', from client 172.24.0.1:43228, authenticated as 'admin' {id=1}

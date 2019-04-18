@@ -1,0 +1,8 @@
+[2019-03-21 03:37:03,679]   INFO [ssing plugins 3] - gers.vcs.git.MirrorManagerImpl - No mapping file found at /data/teamcity_server/datadir/system/caches/git/map, create a new one
+[2019-03-21 03:37:03,704]   INFO [ssing plugins 3] - gers.vcs.git.MirrorManagerImpl - Restore mapping from existing repositories
+[2019-03-21 03:37:03,705]   INFO [ssing plugins 3] - gers.vcs.git.MirrorManagerImpl - No existing repositories found
+[2019-03-21 03:37:07,319]   INFO [ssing plugins 3] -      jetbrains.buildServer.VCS - Server-wide hg path is not set, will use path from the VCS root settings
+[2019-03-21 03:37:18,000]   INFO [ssing plugins 3] - ache.fs.impl.MirrorManagerImpl - No mapping file found at /data/teamcity_server/datadir/system/caches/svn/map, create a new one
+[2019-03-21 03:37:18,000]   INFO [ssing plugins 3] - ache.fs.impl.MirrorManagerImpl - Restore mapping from existing repositories
+[2019-03-21 03:37:18,001]   INFO [ssing plugins 3] - ache.fs.impl.MirrorManagerImpl - No existing repositories found
+[2019-03-21 03:38:07,571]   INFO [ti node tasks 1] -      jetbrains.buildServer.VCS - Accepted the periodical checking for changes task

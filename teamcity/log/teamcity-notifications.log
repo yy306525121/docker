@@ -1,0 +1,2 @@
+[2019-03-21 03:37:05,795]   INFO - n.email.EMailNotificatorConfig - Loading configuration file: /data/teamcity_server/datadir/config/_notifications/email/email-config.xml
+[2019-03-21 03:37:10,099]   INFO - jabber.JabberNotificatorConfig - Loading configuration file: /data/teamcity_server/datadir/config/_notifications/jabber/jabber-config.xml

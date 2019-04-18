@@ -4,8 +4,10 @@ services:
     image: zookeeper
     networks:
       - dubbo-admin
+    ports:
+      - "2181:2181"
   dubbo-admin:
-    image: yy306525121/dubbo-admin
+    image: akafra/dubbo-admin
     networks: 
       - dubbo-admin
     depends_on:

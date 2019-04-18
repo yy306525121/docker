@@ -1,0 +1,4 @@
+[2019-03-21 03:38:08,067]   INFO - tbrains.buildServer.ACTIVITIES - Server Started
+[2019-03-21 03:40:09,942]   INFO - tbrains.buildServer.ACTIVITIES - New user created: 'admin' {id=1}
+[2019-03-21 03:43:13,050]   INFO - tbrains.buildServer.ACTIVITIES - Shutdown Spring components
+[2019-03-21 03:43:14,450]   INFO - tbrains.buildServer.ACTIVITIES - Spring components are shut down

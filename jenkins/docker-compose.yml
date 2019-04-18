@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  jenkins-server:
+    image: jenkins:2.60.3
+    volumes:
+      - ./data:/var/jenkins_home
+    networks:
+      - jenkins-network
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+
+networks:
+  jenkins-network:
+

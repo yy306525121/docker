@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  postgres-service:
+    image: postgres:11.2
+    volumes:
+      - postgres-data-11.2:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: hello
+    networks:
+      - postgres-network
+    ports:
+      - "5432:5432"
+volumes:
+    postgres-data-11.2:
+networks:
+  postgres-network:

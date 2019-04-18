@@ -1,0 +1,2 @@
+[2019-03-21 03:43:13,539]   INFO - vcs.tfs.pool.TfsPoolTerminator - Terminating TFS .net sessions
+[2019-03-21 03:43:13,559]   INFO - s.java.TfsJavaRunnerTerminator - Terminating TFS java sessions
