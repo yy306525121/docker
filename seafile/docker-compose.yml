@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  saefile-server:
+    image: seafileltd/seafile:latest
+    environment:
+      SEAFILE_SERVER_HOSTNAME: www.codeyang.cn
+    volumes:
+      - ./data:/opt/seafile-data
+    ports:
+      - "80:80"
