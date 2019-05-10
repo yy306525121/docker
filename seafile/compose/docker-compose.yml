@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  saefile-server:
+    image: registry.cn-beijing.aliyuncs.com/akafra/seafile-pro
+    environment:
+      SEAFILE_SERVER_HOSTNAME: file.akafra.com
+      SEAFILE_ADMIN_EMAIL: akafra
+      SEAFILE_ADMIN_PASSWORD: jazr932832
+    volumes:
+      - ./data:/shared
+    ports:
+      - "80:80"
